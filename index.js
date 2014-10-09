@@ -1,1 +1,1 @@
-module.exports = require('./build/pdf.js')
+module.exports = require('./build/pdf.combined.js')
