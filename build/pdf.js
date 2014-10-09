@@ -19,7 +19,12 @@
 
 // Initializing PDFJS global object (if still undefined)
 if (typeof PDFJS === 'undefined') {
-  (typeof window !== 'undefined' ? window : this).PDFJS = {};
+  var PDFJS = (typeof window !== 'undefined' ? window : this).PDFJS = {};
+}
+
+// npm modules
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = PDFJS;
 }
 
 PDFJS.version = '1.0.892';
