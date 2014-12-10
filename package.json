@@ -27,6 +27,7 @@
     "name": "pdfjsbot",
     "email": "ydelendik@mozilla.com"
   },
+  "main": "build/pdf.combined.js",
   "maintainers": [
     {
       "name": "pdfjsbot",
